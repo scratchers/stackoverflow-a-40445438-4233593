@@ -7,12 +7,16 @@ $users = [
 ];
 
 ?>
+
 <form method="POST">
+
 <?php foreach($users as $user): ?>
 	<input type="checkbox" name="tipoinsertos[]" value="<?= $user['tipoinsertom']; ?>"> <?= $user['tipoinsertom']; ?> 
 <?php endforeach; ?>
+
 	<input type="submit" value="Submit"/>
 </form>
+
 <?php
 
 // returns an intance of PDO
